@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html[Attributes Style] {
+    -webkit-locale: "en";
+}
+html {
+    display: block;
+}
+body {
+  font-size: small;
+  font-family: Arial, sans-serif;
+  height: 100%;
+  margin: 0;
+  background: white;
+  color: black;
+  display: block;
+}
+
+.header {
+  margin: 1em;
+}
+
+.header .top-nav-left {
+  display: inline-block;
+  float: left;
+}
+
+.header .top-nav-right {
+  display: inline-block;
+  float: right;
+}
+
+a:-webkit-any-link {
+  color: black;
+  cursor: pointer;
+  text-decoration: none;
+  padding-right: 1em;
+}

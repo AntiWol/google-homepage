@@ -1,25 +1,28 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 html[Attributes Style] {
-    -webkit-locale: "en";
+  -webkit-locale: "en";
 }
+
 html {
-    display: block;
-}
-body {
-  font-size: small;
-  font-family: Arial, sans-serif;
-  height: 100%;
-  margin: 0;
-  background: white;
-  color: black;
   display: block;
 }
 
-.header {
+body, html {
+  cursor: default;
+  font: small arial,sans-serif;
+  margin: 0;
+  min-width: 360px;
+  min-height: 100%;
+  overflow-x: hidden;
+  text-align: -webkit-center;
+
+}
+
+.header{
   margin: 1em;
 }
 
@@ -28,9 +31,27 @@ body {
   float: left;
 }
 
+.header .top-nav-left>a{
+  vertical-align: bottom;
+}
+
 .header .top-nav-right {
   display: inline-block;
   float: right;
+}
+
+.header .top-nav-right a>input{
+  background-color:#3399ff;
+  height: 2em;
+  width: 4.5em;
+  border: none;
+  border-radius: 10%;
+}
+
+.header .top-nav-right a>img{
+  height: 2em;
+  width: 2em;
+  vertical-align: bottom;
 }
 
 a:-webkit-any-link {
@@ -38,4 +59,17 @@ a:-webkit-any-link {
   cursor: pointer;
   text-decoration: none;
   padding-right: 1em;
+  vertical-align: bottom;
+}
+
+.google-logo{
+  height: 231px;
+  margin-top: 45px;
+  text-align: -webkit-center;
+}
+
+.google-logo>img  {
+  margin-top: 160px;
+  height: 92px;
+  width: 272px;
 }

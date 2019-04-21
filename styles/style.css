@@ -7,10 +7,6 @@ html[Attributes Style] {
   -webkit-locale: "en";
 }
 
-html {
-  display: block;
-}
-
 body, html {
   cursor: default;
   font: small arial,sans-serif;
@@ -19,22 +15,14 @@ body, html {
   min-height: 100%;
   overflow-x: hidden;
   text-align: -webkit-center;
-
+  text-align: center;
 }
 
 .header{
   margin: 1em;
 }
 
-.header .top-nav-left {
-  display: inline-block;
-  float: left;
-}
-
-.header .top-nav-left>a{
-  vertical-align: bottom;
-}
-
+/*top-nav*/
 .header .top-nav-right {
   display: inline-block;
   float: right;
@@ -54,6 +42,7 @@ body, html {
   vertical-align: bottom;
 }
 
+/*any link styles*/
 a:-webkit-any-link {
   color: black;
   cursor: pointer;
@@ -62,14 +51,106 @@ a:-webkit-any-link {
   vertical-align: bottom;
 }
 
-.google-logo{
+a:-webkit-any-link:hover {
+text-decoration: underline;
+}
+
+a:any-link {
+  color: black;
+  cursor: pointer;
+  text-decoration: none;
+  padding-right: 1em;
+  vertical-align: bottom;
+}
+
+a:any-link:hover {
+text-decoration: underline;
+}
+
+/*center*/
+#logo{
   height: 231px;
   margin-top: 45px;
   text-align: -webkit-center;
 }
 
-.google-logo>img  {
-  margin-top: 160px;
-  height: 92px;
+.google-logo {
+  padding-top: 115px;
   width: 272px;
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: auto;
+}
+
+.google-form{
+  margin-top: 2em;
+}
+
+#search{
+  padding: 5px 8px 0px 20px;
+  width: 500px;  
+  height: 2em;
+  border: silver solid 1px;
+  border-radius: 25px;
+  background-color: white;
+  color: black;
+}
+
+.button{
+  margin: 1em;
+  background-color: #f2f2f2;
+  border: 1px solid #f2f2f2;
+  border-radius: 4px;
+  color: #5F6368;
+  cursor: pointer;
+  font-family: arial,sans-serif;
+  font-size: 1.3em;
+  min-width: 54px;
+  padding: 0 16px;
+  text-align: center;
+}
+
+.button:focus{
+  border: 1px solid #4d90fe;
+  outline: none;
+}
+
+.button:hover{
+  border: 1px solid #c6c6c6;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+  color: #222;
+}
+
+/*footer*/
+#footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%; 
+  height: 5%;
+  background: #f2f2f2;
+  border-top: 1px solid #e4e4e4;
+}
+
+#footer>.footer-right{
+  padding-right: 1.5em;
+  float: right;
+  vertical-align: center;
+}
+
+.footer-left{
+  margin-left: 1.5em;
+  float: left;
+  vertical-align: center;
+}
+
+.country{
+  border-bottom: rgb(145, 149, 155) solid 1px;
+}
+
+.country>p{
+  margin-left: 1.5em;
+  text-align: left;
+  padding-bottom: 0.5em;  
 }
